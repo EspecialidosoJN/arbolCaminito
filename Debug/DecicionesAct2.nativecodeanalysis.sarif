@@ -1,0 +1,654 @@
+{
+  "version": "2.1.0",
+  "$schema": "https://schemastore.azurewebsites.net/schemas/json/sarif-2.1.0-rtm.5.json",
+  "runs": [
+    {
+      "results": [
+        {
+          "ruleId": "C28182",
+          "message": {
+            "text": "Desreferenciando el puntero NULL. 'Ok' contiene el mismo valor NULL que contenía 'Ok->Padre'. "
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///D:/udg/Sem estructura de datos/Inteligencia/DecicionesAct2/DecicionesAct2.cpp"
+                },
+                "region": {
+                  "startLine": 46,
+                  "startColumn": 9,
+                  "endLine": 46,
+                  "endColumn": 22
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "main",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "codeFlows": [
+            {
+              "threadFlows": [
+                {
+                  "locations": [
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/udg/Sem estructura de datos/Inteligencia/DecicionesAct2/DecicionesAct2.cpp"
+                          },
+                          "region": {
+                            "startLine": 15,
+                            "startColumn": 15
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/udg/Sem estructura de datos/Inteligencia/DecicionesAct2/DecicionesAct2.cpp"
+                          },
+                          "region": {
+                            "startLine": 16,
+                            "startColumn": 15
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/udg/Sem estructura de datos/Inteligencia/DecicionesAct2/DecicionesAct2.cpp"
+                          },
+                          "region": {
+                            "startLine": 17,
+                            "startColumn": 21
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/udg/Sem estructura de datos/Inteligencia/DecicionesAct2/DecicionesAct2.cpp"
+                          },
+                          "region": {
+                            "startLine": 18,
+                            "startColumn": 21
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/udg/Sem estructura de datos/Inteligencia/DecicionesAct2/DecicionesAct2.cpp"
+                          },
+                          "region": {
+                            "startLine": 20,
+                            "startColumn": 9
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/udg/Sem estructura de datos/Inteligencia/DecicionesAct2/DecicionesAct2.cpp"
+                          },
+                          "region": {
+                            "startLine": 23,
+                            "startColumn": 14
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/udg/Sem estructura de datos/Inteligencia/DecicionesAct2/DecicionesAct2.cpp"
+                          },
+                          "region": {
+                            "startLine": 24,
+                            "startColumn": 14
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/udg/Sem estructura de datos/Inteligencia/DecicionesAct2/DecicionesAct2.cpp"
+                          },
+                          "region": {
+                            "startLine": 24,
+                            "startColumn": 23
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/udg/Sem estructura de datos/Inteligencia/DecicionesAct2/DecicionesAct2.cpp"
+                          },
+                          "region": {
+                            "startLine": 26,
+                            "startColumn": 18
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/udg/Sem estructura de datos/Inteligencia/DecicionesAct2/DecicionesAct2.cpp"
+                          },
+                          "region": {
+                            "startLine": 26,
+                            "startColumn": 29
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/udg/Sem estructura de datos/Inteligencia/DecicionesAct2/DecicionesAct2.cpp"
+                          },
+                          "region": {
+                            "startLine": 28,
+                            "startColumn": 33
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/udg/Sem estructura de datos/Inteligencia/DecicionesAct2/DecicionesAct2.cpp"
+                          },
+                          "region": {
+                            "startLine": 29,
+                            "startColumn": 21
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/udg/Sem estructura de datos/Inteligencia/DecicionesAct2/DecicionesAct2.cpp"
+                          },
+                          "region": {
+                            "startLine": 26,
+                            "startColumn": 36
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/udg/Sem estructura de datos/Inteligencia/DecicionesAct2/DecicionesAct2.cpp"
+                          },
+                          "region": {
+                            "startLine": 26,
+                            "startColumn": 29
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/udg/Sem estructura de datos/Inteligencia/DecicionesAct2/DecicionesAct2.cpp"
+                          },
+                          "region": {
+                            "startLine": 28,
+                            "startColumn": 33
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/udg/Sem estructura de datos/Inteligencia/DecicionesAct2/DecicionesAct2.cpp"
+                          },
+                          "region": {
+                            "startLine": 29,
+                            "startColumn": 21
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/udg/Sem estructura de datos/Inteligencia/DecicionesAct2/DecicionesAct2.cpp"
+                          },
+                          "region": {
+                            "startLine": 26,
+                            "startColumn": 36
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/udg/Sem estructura de datos/Inteligencia/DecicionesAct2/DecicionesAct2.cpp"
+                          },
+                          "region": {
+                            "startLine": 26,
+                            "startColumn": 29
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/udg/Sem estructura de datos/Inteligencia/DecicionesAct2/DecicionesAct2.cpp"
+                          },
+                          "region": {
+                            "startLine": 24,
+                            "startColumn": 29
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/udg/Sem estructura de datos/Inteligencia/DecicionesAct2/DecicionesAct2.cpp"
+                          },
+                          "region": {
+                            "startLine": 24,
+                            "startColumn": 23
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/udg/Sem estructura de datos/Inteligencia/DecicionesAct2/DecicionesAct2.cpp"
+                          },
+                          "region": {
+                            "startLine": 26,
+                            "startColumn": 18
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/udg/Sem estructura de datos/Inteligencia/DecicionesAct2/DecicionesAct2.cpp"
+                          },
+                          "region": {
+                            "startLine": 26,
+                            "startColumn": 29
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/udg/Sem estructura de datos/Inteligencia/DecicionesAct2/DecicionesAct2.cpp"
+                          },
+                          "region": {
+                            "startLine": 24,
+                            "startColumn": 29
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/udg/Sem estructura de datos/Inteligencia/DecicionesAct2/DecicionesAct2.cpp"
+                          },
+                          "region": {
+                            "startLine": 24,
+                            "startColumn": 23
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/udg/Sem estructura de datos/Inteligencia/DecicionesAct2/DecicionesAct2.cpp"
+                          },
+                          "region": {
+                            "startLine": 33,
+                            "startColumn": 16
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/udg/Sem estructura de datos/Inteligencia/DecicionesAct2/DecicionesAct2.cpp"
+                          },
+                          "region": {
+                            "startLine": 34,
+                            "startColumn": 8
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/udg/Sem estructura de datos/Inteligencia/DecicionesAct2/DecicionesAct2.cpp"
+                          },
+                          "region": {
+                            "startLine": 35,
+                            "startColumn": 17
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/udg/Sem estructura de datos/Inteligencia/DecicionesAct2/DecicionesAct2.cpp"
+                          },
+                          "region": {
+                            "startLine": 36,
+                            "startColumn": 19
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/udg/Sem estructura de datos/Inteligencia/DecicionesAct2/DecicionesAct2.cpp"
+                          },
+                          "region": {
+                            "startLine": 38,
+                            "startColumn": 46
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/udg/Sem estructura de datos/Inteligencia/DecicionesAct2/DecicionesAct2.cpp"
+                          },
+                          "region": {
+                            "startLine": 44,
+                            "startColumn": 8
+                          }
+                        },
+                        "message": {
+                          "text": "'Ok' puede ser NULL"
+                        }
+                      },
+                      "kinds": [
+                        "declaración"
+                      ],
+                      "importance": "essential"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/udg/Sem estructura de datos/Inteligencia/DecicionesAct2/DecicionesAct2.cpp"
+                          },
+                          "region": {
+                            "startLine": 45,
+                            "startColumn": 17
+                          }
+                        },
+                        "message": {
+                          "text": "'Ok' es una salida de 'NodoArbol::imprimir' (declarada en d:\\udg\\sem estructura de datos\\inteligencia\\decicionesact2\\nodoarbol.h:12)"
+                        }
+                      },
+                      "kinds": [
+                        "declaración"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/udg/Sem estructura de datos/Inteligencia/DecicionesAct2/DecicionesAct2.cpp"
+                          },
+                          "region": {
+                            "startLine": 46,
+                            "startColumn": 19
+                          }
+                        },
+                        "message": {
+                          "text": "Omitir esta bifurcación, (se asume que 'Ok->Padre==0' es false)"
+                        }
+                      },
+                      "kinds": [
+                        "bifurcar"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/udg/Sem estructura de datos/Inteligencia/DecicionesAct2/DecicionesAct2.cpp"
+                          },
+                          "region": {
+                            "startLine": 46,
+                            "startColumn": 19
+                          }
+                        },
+                        "message": {
+                          "text": "'Ok' se desreferencia, pero puede que siga siendo NULL"
+                        }
+                      },
+                      "kinds": [
+                        "uso"
+                      ],
+                      "importance": "essential"
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "suppressions": []
+        },
+        {
+          "ruleId": "C26495",
+          "message": {
+            "text": "La variable \"NodoArbol::Tablero\" no está inicializada. Siempre debe inicializarse una variable miembro (type.6)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///D:/udg/Sem estructura de datos/Inteligencia/DecicionesAct2/NodoArbol.h"
+                },
+                "region": {
+                  "startLine": 13,
+                  "startColumn": 1,
+                  "endLine": 13,
+                  "endColumn": 1
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "??0NodoArbol@@QAE@XZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "suppressions": [],
+          "properties": {
+            "targetSymbol": "NodoArbol::Tablero"
+          }
+        },
+        {
+          "ruleId": "C26495",
+          "message": {
+            "text": "La variable \"NodoArbol::Padre\" no está inicializada. Siempre debe inicializarse una variable miembro (type.6)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///D:/udg/Sem estructura de datos/Inteligencia/DecicionesAct2/NodoArbol.h"
+                },
+                "region": {
+                  "startLine": 13,
+                  "startColumn": 1,
+                  "endLine": 13,
+                  "endColumn": 1
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "??0NodoArbol@@QAE@XZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "suppressions": [],
+          "properties": {
+            "targetSymbol": "NodoArbol::Padre"
+          }
+        }
+      ],
+      "tool": {
+        "driver": {
+          "name": "PREfast",
+          "fullName": "PREfast Code Analysis",
+          "version": "14.28.29914.0",
+          "informationUri": "https://aka.ms/cpp/ca"
+        }
+      },
+      "invocations": [
+        {
+          "commandLine": "\"C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.28.29910\\bin\\HostX86\\x86\\c1xx.dll\" -ACf{1F7B090C-16DB-4822-966A-A93D26ED4681} -ACpmspft140.dll -Alint -D_PREFAST_ -D_AST_FE_ -Analyze -zm0x009BB1C0 -il C:\\Users\\galle\\AppData\\Local\\Temp\\_CL_d7035990ast -typedil -f DecicionesAct2.cpp -Ze -D_MSC_EXTENSIONS -Zp8 -Gs -pc \\:/ -D_MSC_VER=1928 -D_MSC_FULL_VER=192829914 -D_MSC_BUILD=0 -D_WIN32 -D_M_IX86=600 -D_M_IX86_FP=2 -GR -D_CPPRTTI -nologo -W 3 -diagnostics:column -D_GUARDOVERFLOW_CRT_ALLOCATORS=1 -Ot -DCODE_ANALYSIS -DWIN32 -D_DEBUG -D_CONSOLE -D_UNICODE -DUNICODE -EHs -D_CPPUNWIND -EHc -D__MSVC_RUNTIME_CHECKS -RTCs -RTCu -MDd -D_DEBUG -D_MT -D_DLL -GS -D_M_FP_PRECISE -permissive- -Zc:wchar_t -Zc:forScope -FoDebug\\DecicionesAct2.obj -FdDebug\\vc142.pdb -Gd -analyze:projectdirectory D:\\udg\\Sem estructura de datos\\Inteligencia\\DecicionesAct2 -analyze:rulesetdirectory ;C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\Team Tools\\Static Analysis Tools\\\\Rule Sets; -analyze:ruleset C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\Team Tools\\Static Analysis Tools\\Rule Sets\\NativeRecommendedRules.ruleset -analyze:quiet -analyze:plugin C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.28.29910\\bin\\HostX86\\x86\\EspXEngine.dll -FC -errorreport:prompt -I C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.28.29910\\include -I C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.28.29910\\atlmfc\\include -I C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Auxiliary\\VS\\include -I C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.19041.0\\ucrt -I C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.19041.0\\um -I C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.19041.0\\shared -I C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.19041.0\\winrt -I C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.19041.0\\cppwinrt -I C:\\Program Files (x86)\\Windows Kits\\NETFXSDK\\4.8\\Include\\um",
+          "executionSuccessful": true
+        }
+      ],
+      "artifacts": [
+        {
+          "location": {
+            "uri": "file:///D:/udg/Sem estructura de datos/Inteligencia/DecicionesAct2/NodoArbol.h"
+          },
+          "roles": [
+            "resultFile"
+          ],
+          "hashes": {
+            "md5": "9a114e5567c31a0b7c5b047699fc34c6"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/udg/sem estructura de datos/inteligencia/decicionesact2/nodoarbol.cpp"
+          },
+          "roles": [
+            "analysisTarget"
+          ],
+          "hashes": {
+            "md5": "c30486ad50e1ad4fb0b9565e84883fcd"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///D:/udg/Sem estructura de datos/Inteligencia/DecicionesAct2/DecicionesAct2.cpp"
+          },
+          "roles": [
+            "analysisTarget",
+            "resultFile"
+          ],
+          "hashes": {
+            "md5": "4484070263c11bdb05f2bc5df2ab4261"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/udg/sem estructura de datos/inteligencia/decicionesact2/arboldecicion.h"
+          },
+          "hashes": {
+            "md5": "9bb98ec5c6553626ad545882e4d39917"
+          }
+        }
+      ]
+    }
+  ]
+}

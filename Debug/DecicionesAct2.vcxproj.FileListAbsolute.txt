@@ -1,0 +1,6 @@
+D:\udg\Sem estructura de datos\Inteligencia\DecicionesAct2\Debug\DecicionesAct2.exe
+D:\udg\Sem estructura de datos\Inteligencia\DecicionesAct2 - copia\Debug\DecicionesAct2.exe
+D:\udg\Sem estructura de datos\Inteligencia\DecicionesAct2 - copia - copia\Debug\DecicionesAct2.exe
+D:\udg\Sem estructura de datos\Inteligencia\DecicionesAct2_Caminito\Debug\DecicionesAct2.exe
+D:\udg\Sem estructura de datos\Inteligencia\DecicionesAct2_Caminito - funciona con un problema de hijos\Debug\DecicionesAct2.exe
+D:\Vario\UDG\ParaCargarAGit\DecicionesAct2_Caminito - funciona con un problema de hijos\Debug\DecicionesAct2.exe
