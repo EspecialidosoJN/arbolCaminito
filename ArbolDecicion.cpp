@@ -27,13 +27,8 @@ void ArbolDecicion::busquedaPorAmplitud()
 	HANDLE HC = GetStdHandle(STD_OUTPUT_HANDLE);
 	NodoArbol Destino;
 	char memoria;
-	bool entradaValida = false, Modorapido = false;
+	bool entradaValida = false;
 	int TY, TX;
-	do
-	{
-		cout << "Desea activar el modo rapido 1 si 0 no: ";
-		cin >> Modorapido;
-	} while (!cin.good());
 	system("cls");
 	imprimirMapa();
 	do
@@ -117,24 +112,23 @@ void ArbolDecicion::busquedaPorAmplitud()
 
 				//if(MapaUnico(vista,Visitados))
 				//{
-				formarHojas(vista);
-				//Proxima->insert(Proxima->end(), vista->Hijos.begin(), vista->Hijos.end());            //J ****************Esta linea no la entiendo bien, epica candidata en caso de que no sirva esta cosa****************
+					formarHojas(vista);
+					//Proxima->insert(Proxima->end(), vista->Hijos.begin(), vista->Hijos.end());            //J ****************Esta linea no la entiendo bien, epica candidata en caso de que no sirva esta cosa****************
+					
+					
+					//cout << "\nEsta vista genero " << vista->Hijos.size() << "\n";
+					//vista->imprimir();
+					//system("pause");
+					for (int k = 0; k<vista->Hijos.size();k++)
+					{
+						//if (MapaUnico(vista->Hijos.front(), Visitados)) //Si el hijo en turno no esta contemplado ya en Proxima, habia un error aqui que me hizo perder 1 hora 10 minutos :c más que duplico lo que tarde en hacer todo este metodo
+						//{
+							Proxima->push_front(vista->Hijos.front());
+							this->Mapa[vista->Hijos.front()->X][vista->Hijos.front()->Y] = '.';
+							vista->girarHijos();
+						//}
+					}
 
-
-				//cout << "\nEsta vista genero " << vista->Hijos.size() << "\n";
-				//vista->imprimir();
-				//system("pause");
-				for (int k = 0; k < vista->Hijos.size(); k++)
-				{
-					//if (MapaUnico(vista->Hijos.front(), Visitados)) //Si el hijo en turno no esta contemplado ya en Proxima, habia un error aqui que me hizo perder 1 hora 10 minutos :c más que duplico lo que tarde en hacer todo este metodo
-					//{
-					Proxima->push_front(vista->Hijos.front());
-					this->Mapa[vista->Hijos.front()->X][vista->Hijos.front()->Y] = '.';
-					vista->girarHijos();
-					//}
-				}
-				if (!Modorapido)
-				{
 					system("cls");
 					memoria = this->Mapa[vista->X][vista->Y];
 					this->Mapa[vista->X][vista->Y] = 'V';
@@ -142,7 +136,6 @@ void ArbolDecicion::busquedaPorAmplitud()
 					cout << Proxima->size();
 					//system("pause");
 					this->Mapa[vista->X][vista->Y] = memoria;
-				}
 
 
 				//}
@@ -196,11 +189,8 @@ void ArbolDecicion::busquedaPorAmplitud()
 		//	Proxima->push_back(Proxima->front());
 		//	Proxima->pop_front();
 		//}
-		if (!Modorapido)
-		{
-			system("pause");
-			system("cls");
-		}
+		system("pause");
+		system("cls");
 	}
 	//cout << "\n Resuelto|Fin\n"<<endl;
 
@@ -397,147 +387,6 @@ void ArbolDecicion::formarHojas(NodoArbol* Padre)
 	}
 	
 
-}
-
-void ArbolDecicion::busquedaPorProfundidad()
-{
-	NodoArbol* Vista, *ProximaVista = nullptr    ;
-	NodoArbol Destino;
-	char memoria;
-	bool entradaValida = false, Modorapido = false, SinRespuesta = false;
-	int TY, TX;
-	HANDLE HC = GetStdHandle(STD_OUTPUT_HANDLE);
-
-	do
-	{
-		cout << "Desea activar el modo rapido 1 si 0 no: ";
-		cin >> Modorapido;
-	} while (!cin.good());
-	system("cls");
-	imprimirMapa();
-	do
-	{
-		entradaValida = true;
-		cout << "El sugerido para predeterminado es 79. Ingresa un valor X destino entero del 0 al 79: ";
-		cin >> TX;
-		if (TX < 0 || TX>79)
-		{
-			entradaValida = false;
-		}
-	} while (!cin.good() || !entradaValida);
-
-	do
-	{
-		entradaValida = true;
-		cout << "El sugerido para predeterminado es 0. Ingresa un valor Y destino entero del 0 al 14: ";
-		cin >> TY;
-		if (TY < 0 || TY>14)
-		{
-			entradaValida = false;
-		}
-	} while (!cin.good() || !entradaValida);
-	Destino.Y = TY;
-	Destino.X = TX;
-
-
-	do
-	{
-		entradaValida = true;
-		cout << "El sugerido para predeterminado es 0. Ingresa un valor X Origen entero del 0 al 79: ";
-		cin >> TX;
-		if (TX < 0 || TX>79)
-		{
-			entradaValida = false;
-		}
-	} while (!cin.good() || !entradaValida);
-	do
-	{
-		entradaValida = true;
-		cout << "El sugerido para predeterminado es 14 o 0. Ingresa un valor Y Origen entero del 0 al 14: ";
-		cin >> TY;
-		if (TY < 0 || TY>14)
-		{
-			entradaValida = false;
-		}
-	} while (!cin.good() || !entradaValida);
-	this->Raiz.X = TX;
-	this->Raiz.Y = TY;
-
-
-
-
-	Vista = &Raiz;
-	int contador = 0;
-	while (!validarDestino(Vista,&Destino) && !SinRespuesta)
-	{
-		//cout << contador << "\n";
-		//contador++;
-		//system("pause");
-		if (Vista->Hijos.size() > 0)
-		{
-			ProximaVista = Vista->Hijos.front();
-			Vista->Hijos.pop_front();
-		}
-		else
-		{
-			formarHojas(Vista);
-			for (int k = 0; k < Vista->Hijos.size(); k++)
-			{
-				this->Mapa[Vista->Hijos.front()->X][Vista->Hijos.front()->Y] = '.';
-				Vista->girarHijos();
-			}
-			if (Vista->Hijos.size() > 0)
-			{
-				ProximaVista = Vista->Hijos.front();
-				Vista->Hijos.pop_front();
-			}
-			else
-			{
-				if (Vista->Padre == nullptr)
-				{
-					this->Mapa[Vista->X][Vista->Y] = 'F';
-					imprimirMapa();
-					cout << "No hay respuesta\n";
-					SinRespuesta = true;
-					system("pause");
-				}
-				else
-				{
-					ProximaVista = Vista->Padre;
-					delete Vista;
-				}
-			}
-		}
-		//memoria = this->Mapa[Vista->X][Vista->Y];
-		//this->Mapa[Vista->X][Vista->Y] = '.';
-		Vista = ProximaVista;
-
-	}
-	if (!SinRespuesta)
-	{
-		system("cls");
-		this->imprimirMapa();
-		SetConsoleTextAttribute(HC, 48);
-		do
-		{
-			gotoxy(Vista->X, Vista->Y);
-			if (Vista->Padre != nullptr)
-				cout << "O";
-			else
-				cout << "A";
-
-
-			Vista = Vista->Padre;
-		} while (Vista != nullptr);
-	}
-	else
-	{
-		system("cls");
-		cout << "\n sin respuesta \n";
-		system("pause");
-	}
-	gotoxy(0, 16);
-	SetConsoleTextAttribute(HC, 15);
 }
 
 

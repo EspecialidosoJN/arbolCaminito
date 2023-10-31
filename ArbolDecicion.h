@@ -14,7 +14,6 @@ class ArbolDecicion
 	bool imprimirNodosCreados = false;
 	void formarHojas(NodoArbol* Padre);
 	void busquedaPorAmplitud();
-	void busquedaPorProfundidad();
 	bool validarDestino(NodoArbol* nodo, NodoArbol* destino);
 	bool MapaUnico(NodoArbol* nodo, list<NodoArbol*> probadas);
 	void imprimirMapa();

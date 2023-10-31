@@ -21,7 +21,7 @@ int main()
         }
     }
     ArbolDecicion Prueba;
-    Prueba.busquedaPorProfundidad();
+    Prueba.busquedaPorAmplitud();
     system("pause");
     std::cout << "Hello World!\n";
     system("pause");

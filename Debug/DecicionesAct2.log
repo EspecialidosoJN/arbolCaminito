@@ -1,9 +1,1 @@
-﻿  ArbolDecicion.cpp
-D:\Vario\UDG\ParaCargarAGit\DecicionesAct2_Caminito - funciona con un problema de hijos\ArbolDecicion.cpp(127,23): warning C4018: '<': no coinciden signed/unsigned
-D:\Vario\UDG\ParaCargarAGit\DecicionesAct2_Caminito - funciona con un problema de hijos\ArbolDecicion.cpp(289,12): warning C4244: 'argumento': conversión de 'time_t' a 'unsigned int'; posible pérdida de datos
-D:\Vario\UDG\ParaCargarAGit\DecicionesAct2_Caminito - funciona con un problema de hijos\ArbolDecicion.cpp(484,22): warning C4018: '<': no coinciden signed/unsigned
-D:\Vario\UDG\ParaCargarAGit\DecicionesAct2_Caminito - funciona con un problema de hijos\ArbolDecicion.cpp(406,7): warning C4101: 'memoria': variable local sin referencia
-  DecicionesAct2.cpp
-  NodoArbol.cpp
-  Generando código...
-  DecicionesAct2.vcxproj -> D:\Vario\UDG\ParaCargarAGit\DecicionesAct2_Caminito - funciona con un problema de hijos\Debug\DecicionesAct2.exe
+﻿  DecicionesAct2.vcxproj -> D:\Vario\UDG\ParaCargarAGit\DecicionesAct2_Caminito - funciona con un problema de hijos\Debug\DecicionesAct2.exe
